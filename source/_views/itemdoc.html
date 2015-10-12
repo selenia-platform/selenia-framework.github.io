@@ -1,0 +1,53 @@
+{% extends "docs" %}
+
+{% block head_meta %}
+    <meta name="robots" content="index, follow">
+{% endblock %}
+
+
+{% block content_wrapper %}
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    <div class="sidebar">
+      <div id="SideBar" class="docsnav">
+
+        <div class="list-group panel hidden-xs hidden-sm">
+
+          {% for doc in site.docs %}
+            {% if doc.children %}
+              <a href="#{{ doc.id }}" {% if doc.slug == page.slug %} class="active list-group-item moreitems firstitemlist" {% else %} class="list-group-item moreitems firstitemlist" {% endif %} data-toggle="collapse" data-parent="#SideBar">{{ doc.name }}</a>
+              <div class="collapse" id="{{ doc.id }}">
+                {% for child_doc in doc.children %}
+                  <a href="{{ site.url }}/{{ child_doc.url }}" {% if child_doc.slug == page.slug %} class="active list-group-item secontitemlist" {% else %} class="list-group-item secontitemlist" {% endif %} data-parent="#{{ page.slug }}">{{ child_doc.name }}</a>
+                {% endfor %}
+              </div>
+            {% else %}
+              <a href="{{ site.url }}/{{ doc.url }}" {% if doc.slug == page.slug %} class="active list-group-item firstitemlist" {% else %} class="list-group-item firstitemlist" {% endif %}>{{ doc.name }}</a>
+            {% endif %}
+          {% endfor %}
+
+        </div>
+
+        <div class="list-group panel dropdown hidden-md hidden-lg">
+          <div class="select-style">
+            <select>
+              {% for doc in site.docs %}
+
+                 <option value="/documentation/{{ doc.id }}">{{ doc.name }}</option>
+
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 doccontent">
+    {% block content %}Fallback content. :){% endblock %}
+  </div>
+</div>
+
+
+
+{% endblock %}

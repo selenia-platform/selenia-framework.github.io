@@ -1,0 +1,55 @@
+title: Selenia Framework
+subtitle: A modern php framework for faster and easier web development
+
+docs:
+    -
+        name: Basic Project
+        url: documentation/basic-project/
+        slug: basic-project
+        id: basicproject
+    -
+        name: Configuration
+        url: documentation/configuration/
+        slug: configuration
+        id: configuration
+    -
+        name: Sources
+        url: documentation/sources/
+        slug: sources
+        id: sources
+    -
+        name: Layouts
+        url: documentation/layouts/
+        slug: layouts
+        id: layouts
+    -
+        name: Themes
+        url: documentation/themes/
+        slug: themes
+        id: themes
+    -
+        name: Converters
+        url: documentation/converters/
+        slug: converters
+        id: converters
+    -
+        name: Content Types
+        url: documentation/content-types/
+        slug: content-types
+        id: contenttypes
+        children:
+            -
+                name: Posts
+                url: documentation/content-types/posts/
+                slug: content-types/posts
+                id: posts
+            -
+                name: Ninjas
+                url: documentation/content-types/ninjas/
+                slug: content-types/ninjas
+                id: ninjas
+            -
+                name: Salut
+                url: documentation/content-types/salut/
+                slug: content-types/salut
+                id: saluts
