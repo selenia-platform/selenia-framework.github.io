@@ -60,7 +60,7 @@ body {
   font-size: 18px;
   color: #58595B;
   position: relative;
-  overglow-x:hidden;
+  overflow-x: hidden;
 }
 
 ::selection {
