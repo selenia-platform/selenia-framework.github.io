@@ -60,6 +60,7 @@ body {
   font-size: 18px;
   color: #58595B;
   position: relative;
+  overglow-x:hidden;
 }
 
 ::selection {
@@ -1052,6 +1053,7 @@ html,body{height:100%;}
   border-right: none;
   display: inline-block;
   width: 100%;
+  padding:8px 10px;
 }
 
 #SideBar .active {
@@ -1082,7 +1084,7 @@ html,body{height:100%;}
 
 .firstitemlist {
   font-family: 'khandregular';
-  font-size: 30px;
+  font-size: 22px;
   text-transform: uppercase;
   color: #58595b !important;
   text-align: left;
@@ -1271,6 +1273,8 @@ footer {
   background: #303030;
   color: #FFF;
   min-height: 570px;
+  position:relative;
+  z-index:9999999;
 }
 
 footer a:link,
@@ -1483,6 +1487,9 @@ footer .facebooklink:hover {
   #Banner .claim {
     font-size: 65px;
   }
+  #navbar-scrollselenia{
+    display:none!important;
+  }
 }
 
 #navbar-scrollselenia {
@@ -1548,20 +1555,20 @@ footer .facebooklink:hover {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .docsnav2 {
-    width: 230px;
+    width: 180px;
   }
 }
 
 @media (min-width: 1201px) {
   .docsnav2 {
-    width: 270px;
+    width: 180px;
   }
 
 }
 
 @media (max-width: 1609px) {
   #navbar-scrollselenia {
-    display: none;
+    /*display: none;*/
   }
 }
 
@@ -1657,3 +1664,18 @@ ul.dropdown-menu li a:link {
   margin-left: -15px!important;
   margin-right:-15px!important;
 }
+
+@media (max-width: 1280px) {
+  .forkme{
+    display:none;
+  }
+}
+
+.forkme{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index:99999999;
+}
+
