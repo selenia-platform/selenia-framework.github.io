@@ -1,8 +1,7 @@
 ---
 title: Content types
 slug: content-types
-layout: itemdoc
-use: [docs]
+layout: docs
 ---
 
 Content types

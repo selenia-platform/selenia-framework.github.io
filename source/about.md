@@ -1,6 +1,7 @@
 ---
-layout: texto
+layout: about
 title: About
+link: about
 ---
 
 

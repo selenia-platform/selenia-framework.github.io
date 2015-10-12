@@ -1,8 +1,7 @@
 ---
 title: Converters
 slug: converters
-layout: itemdoc
-use: [docs]
+layout: docs
 ---
 
 Converters

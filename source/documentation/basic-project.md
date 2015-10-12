@@ -1,8 +1,7 @@
 ---
 title: Basic project
 slug: basic-project
-layout: itemdoc
-use: [docs]
+layout: docs
 ---
 
 Basic project

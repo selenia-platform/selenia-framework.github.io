@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+rm -Rf output_*
+sculpin generate --env=prod
+git stash
+git checkout master
+rsync -a --delete --exclude=output_prod/,output_dev/,bin/,.gitignore,CNAME output_prod/ .
+if [ $? -eq 0 ];
+  git add .
+  if [ $? -eq 0 ];
+  then
+    git commit -a -m "Site update"
+    if [ $? -eq 0 ];
+    then
+      git push
+      if [ $? -eq 0 ];
+      then
+        echo "
+The site was published successfully.
+"
+        git checkout source
+        git stash pop
+        exit 0
+      fi
+    fi
+  fi
+fi
+echo "
+An error occurred. The site was NOT published.
+"
+  git checkout .
+  git checkout source
+  git stash pop
+fi
+exit 1

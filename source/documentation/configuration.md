@@ -1,8 +1,7 @@
 ---
 title: Configuration
 slug: configuration
-layout: itemdoc
-use: [docs]
+layout: docs
 ---
 
 Configuration

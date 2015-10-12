@@ -1,24 +1,20 @@
 ---
-layout: itemdoc
+layout: docs
 title: Documentation
-use: [docs]
+link: docs
 ---
 
-
-
-  <div id="navbar-scrollselenia">
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="title">SubMenu</li>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#inline-html">Inline HTML</a></li>
-      <li><a href="#lists">Lists</a></li>
-      <li><a href="#code">Code</a></li>
-    </ul>
-  </div>
-
+<div id="navbar-scrollselenia">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="title">SubMenu</li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#inline-html">Inline HTML</a></li>
+    <li><a href="#lists">Lists</a></li>
+    <li><a href="#code">Code</a></li>
+  </ul>
+</div>
 
 #Doc Main page
-
 
 Markdown: Syntax
 ================

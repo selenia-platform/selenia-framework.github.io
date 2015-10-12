@@ -1,8 +1,7 @@
 ---
 title: Layouts
 slug: layouts
-layout: itemdoc
-use: [docs]
+layout: docs
 ---
 
 Layouts

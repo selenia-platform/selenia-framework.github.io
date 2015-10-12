@@ -1,8 +1,7 @@
 ---
 title: Themes
 slug: themes
-layout: itemdoc
-use: [docs]
+layout: docs
 ---
 
 Themes

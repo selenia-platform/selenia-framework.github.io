@@ -1,8 +1,7 @@
 ---
 title: Sources
 slug: sources
-layout: itemdoc
-use: [docs]
+layout: docs
 ---
 
 Sources

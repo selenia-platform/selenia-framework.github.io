@@ -1,7 +1,4 @@
 ---
-layout: home
+layout: index
+link: home
 ---
-
-# Hello World
-
-This is a test
