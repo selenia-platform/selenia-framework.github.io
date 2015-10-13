@@ -167,6 +167,13 @@ header .navbar a:active {
 header .navbar a:hover {
 }
 
+.navbar-default{
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -1530,7 +1537,7 @@ footer .facebooklink:hover {
 }
 
 #navbar-scrollselenia ul {
-  width: 200px;
+  width: 180px;
   /*margin-right: -260px;*/
   margin-left: 20px;
   /*position: fixed;*/
