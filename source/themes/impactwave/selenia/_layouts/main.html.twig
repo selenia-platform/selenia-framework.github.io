@@ -144,6 +144,7 @@
       var nav     = $ ('.seleniaheader');
       var sub     = $ ('#navbar-scrollselenia ul');
       var docsnav = $ ('.docsnav');
+        var claim = $ ('.claim');
       $ (window).scroll (function () {
         if ($ (this).scrollTop () > 195) {
           sub.addClass ("submenutop");
@@ -159,10 +160,12 @@
           nav.addClass ("f-nav");
           nav.addClass ("animated");
           nav.addClass ("slideInDown");
+            claim.addClass ("claimtop80");
         } else {
           nav.removeClass ("f-nav");
           nav.removeClass ("animated");
           nav.removeClass ("slideInDown");
+            claim.removeClass ("claimtop80");
         }
       });
     });
