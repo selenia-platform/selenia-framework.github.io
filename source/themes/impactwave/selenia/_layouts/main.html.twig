@@ -72,6 +72,8 @@
 
     {% block main %}{% endblock %}
 
+    <a href="#" class="scrollToTop">&nbsp;</a>
+
     <footer>
         <div class="container">
 
@@ -154,16 +156,6 @@
             var claim = $ ('.claim');
             $ (window).scroll (function ()
             {
-                if ($ (this).scrollTop () > 195) {
-                    sub.addClass ("submenutop");
-                    sub.addClass ("animated");
-                    sub.addClass ("fadeIn");
-                    docsnav.addClass ("docsnav2");
-                } else {
-                    sub.removeClass ("submenutop");
-                    sub.removeClass ("fadeIn");
-                    docsnav.removeClass ("docsnav2");
-                }
                 if ($ (this).scrollTop () > 80) {
                     nav.addClass ("f-nav");
                     nav.addClass ("animated");
@@ -176,7 +168,26 @@
                     claim.removeClass ("claimtop80");
                 }
             });
+
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 300) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
         });
+
+
+
+
 
     </script>
 

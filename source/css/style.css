@@ -256,15 +256,15 @@ html,body{height:100%;}
 #Banner a.downloadlink:active {
   background: #BE1E2D;
   color: #FFF;
-  width: 255px;
-  height: 68px;
-  line-height: 78px;
+  width: 180px;
+  height: 45px;
+  line-height: 53px;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   font-family: 'khandregular';
   text-decoration: none;
-  margin-top: 58px;
+  margin-top: 120px;
   margin-right: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -275,6 +275,7 @@ html,body{height:100%;}
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
   display: inline-block;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.78);
+  margin-left:90px;
 }
 
 #Banner a.downloadlink:hover {
@@ -287,15 +288,15 @@ html,body{height:100%;}
 #Banner a.docslink:active {
   background: #6B6B6B;
   color: #FFF;
-  width: 255px;
-  height: 68px;
-  line-height: 78px;
+  width: 180px;
+  height: 45px;
+  line-height: 53px;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   font-family: 'khandregular';
   text-decoration: none;
-  margin-top: 58px;
+  margin-top: 120px;
   margin-left: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -315,8 +316,8 @@ html,body{height:100%;}
 
 #Banner .claim {
   /*background: rgba(255, 255, 255, 0.3);*/
-  font-size: 65px;
-  text-transform: uppercase;
+  font-size: 45px;
+  text-transform: capitalize;
   color: #ffffff;
   font-family: 'Khand-Medium';
   margin-top: 80px;
@@ -1089,17 +1090,33 @@ html,body{height:100%;}
   text-shadow: none;
 }
 
+.itemtree{
+  padding-left:0px;
+}
+.subtiemtree{
+  padding-left:15px;
+  padding-bottom:15px;
+}
+
+.itemtitle{
+  padding-bottom:8px;
+}
+
+.subtiemtree .secontitemlist{
+  font-family: 'proxima_novalight';
+  font-size:14px;
+}
+
 #SideBar .panel {
   box-shadow: none !important;
 }
 
 .firstitemlist {
   font-family: 'khandregular';
-  font-size: 22px;
-  text-transform: uppercase;
+  font-size: 18px!important;
   color: #58595b !important;
   text-align: left;
-  border-bottom: 1px solid #cccccc !important;
+  /*border-bottom: 1px solid #cccccc !important;*/
 }
 
 .secontitemlist {
@@ -1505,6 +1522,7 @@ footer .facebooklink:hover {
 
 #navbar-scrollselenia {
   float: right;
+  display:none;
 }
 
 #navbar-scrollselenia .nav-tabs > li {
@@ -1557,8 +1575,8 @@ footer .facebooklink:hover {
 
 @media (min-width: 992px) and (max-width: 2000px) {
   .docsnav2 {
-    margin-top: -290px;
-    position: fixed;
+   /* margin-top: -290px; */
+   /* position: fixed; */
     display: inline-block;
     overflow: hidden;
   }
@@ -1566,13 +1584,13 @@ footer .facebooklink:hover {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .docsnav2 {
-    width: 180px;
+   /* width: 180px; */
   }
 }
 
 @media (min-width: 1201px) {
   .docsnav2 {
-    width: 180px;
+   /* width: 180px; */
   }
 
 }
@@ -1585,7 +1603,7 @@ footer .facebooklink:hover {
 
 @media (max-width: 992px) {
   .docsnav2 {
-    position: realtive !important;
+   /* position: realtive !important; */
     display: inline-block;
     overflow: hidden;
   }
@@ -1690,3 +1708,23 @@ ul.dropdown-menu li a:link {
   z-index:99999999;
 }
 
+
+.scrollToTop{
+  width:50px;
+  height:65px;
+  padding:10px;
+  text-align:center;
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position:fixed;
+  bottom:25px;
+  right:40px;
+  display:none;
+  background: url('../images/up.png') no-repeat 0px 20px;
+  background-size: 50%;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+}
